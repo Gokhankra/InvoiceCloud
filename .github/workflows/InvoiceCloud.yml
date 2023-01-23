@@ -14,7 +14,9 @@ jobs:
 
     steps:
     - uses: browser-actions/setup-chrome@v1
-    - run: chrome --version
+    with:
+      chrome-version: beta
+      run: chrome --version
     
     - uses: actions/checkout@v3
     - name: Set up JDK 1.8
