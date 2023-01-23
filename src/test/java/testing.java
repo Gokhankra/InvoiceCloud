@@ -13,7 +13,7 @@ public class testing {
 
         int [] a={1,2,3,6,3};
         int [] b={3,8,9};
-
+        System.out.println(Collections.frequency(Collections.singletonList(a), 3));
 
         for (int i = 0; i <a.length ; i++) {
 
@@ -22,7 +22,7 @@ public class testing {
 
                 if (a[i]==b[j]){
 
-                    if(Collections.frequency(a,a[i])==1  )
+                    if(Collections.frequency(Arrays.asList(a),a[i])>=1)
                     System.out.println("common integer values in both array" +"   "+a[i]);
                 }
 
