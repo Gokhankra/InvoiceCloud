@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         glue = "InvoiceProject/stepDefinitions",
         tags = "",
         dryRun = false,
+        publish = true,
         plugin = {
                 "pretty",
                 "rerun:target/rerun.txt",
