@@ -19,18 +19,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
-   steps:
-    - name: Check out Repository
-      uses: actions/checkout@v3
-    - name: Set up JDK
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 8
       uses: actions/setup-java@v3
       with:
-        java-version: 8
-
-    - name: Packaging Jar
-      id: packaging-jar
-      shell: bash
-      run: mvn clean install
+        java-version: '8'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --https://github.com/Gokhankra/InvoiceCloud/blob/f6c87bba2b8a1218c6d750fd5954513c2245b97a/pom.xml
    
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
