@@ -3,7 +3,7 @@ package InvoiceProject.stepDefinitions;
 import InvoiceProject.utils.driver;
 import io.cucumber.java.en.Given;
 
-public class skas {
+public class Page2 {
 
     @Given("user wants to go to google")
     public void user_wants_to_go_to_google() {
