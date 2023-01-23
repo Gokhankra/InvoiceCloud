@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue = "InvoiceProject/stepDefinitions",
-        tags = "@TC1",
+        tags = "",
         dryRun = false,
         plugin = {
                 "pretty",
