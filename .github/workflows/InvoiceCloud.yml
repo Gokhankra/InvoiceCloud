@@ -10,13 +10,9 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
-    
-    - name: Install Selenium
-      run: |
-            sudo pip3 install selenium
     
     - uses: browser-actions/setup-chrome@v1
     - run: chrome --version
